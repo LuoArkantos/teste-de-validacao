@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Inicial</title>
+    <title>Login</title>
+
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <h1>Introdução</h1>
+    <main>
+        <div class='logInPage'><!-- adicionar tag hide-card em html -->
+            <button class='changeToSingUp'>Don't have an <br>account yet?</button>
+            <form>
+                <h2>LOGIN</h2>
+                <label for='login-username'>Username</label>
+                <input type="text" placeholder="Your username" id='login-username' value="">
+
+                <label for='login-password'>Password</label>
+                <input type="password" placeholder="Example@472" id='login-password' value="">
+                <br>
+                <input type='submit'>
+            </form>
+        </div>
+        <div class='singUpPage'><!-- adicionar tag mostrar-tag em html -->
+            <button class='changeToLogin'>Already have <br>an account?</button>
+            <form>
+                <h2>SIGN UP</h2>
+                <label for='setusername'>Set a username</label>
+                <input type="text" placeholder="Your username" id='setusername'>
+
+                <label for='setpassword'>Set a password</label>
+                <input type="password" id='setpassword'>
+
+                <label for='email'>Seu melhor email</label>
+                <input type="email" id='email' placeholder="youremail@mail.com">
+                <br>
+                <input type='submit'>
+            </form>
+        </div>
+    </main>
+    <script src="scripts/inputmanage.js"></script>
+    <script src="scripts/displaycards.js"></script>
 </body>
+
 </html>
